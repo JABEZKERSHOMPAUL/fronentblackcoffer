@@ -7,7 +7,7 @@ function Pie1() {
 
   useEffect(() => {
     // Fetch your data from MongoDB and update the state
-    axios.get('http://localhost:8000/api/groupchart')
+    axios.get('https://blackcoofer.onrender.com/api/groupchart')
       .then(response => {
         const data = response.data.res; // Assuming your response structure is similar
         setChartData(data);

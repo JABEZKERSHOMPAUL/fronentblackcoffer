@@ -66,7 +66,7 @@ const TablePagination = () => {
 
 
             // Fetch paginated data using POST request
-            const response = await axios.post('http://localhost:8000/api/pagination', {
+            const response = await axios.post('https://blackcoofer.onrender.com/api/pagination', {
                 search: '', // Your search query
                 limit: itemsPerPage,
                 skip: (currentPage - 1) * itemsPerPage,

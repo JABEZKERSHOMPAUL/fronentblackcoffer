@@ -7,7 +7,7 @@ const Chart = () => {
 
   useEffect(() => {
     // Fetch your data from MongoDB and update the state
-    axios.get('http://localhost:8000/api/barchart')
+    axios.get('https://blackcoofer.onrender.com/api/barchart')
       .then(response => {
         const data = response.data.res; // Assuming your response structure is similar
         setChartData(data);

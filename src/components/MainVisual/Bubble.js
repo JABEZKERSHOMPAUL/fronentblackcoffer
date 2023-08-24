@@ -7,7 +7,7 @@ function Bubble() {
 
   useEffect(() => {
     // Fetch data from the API endpoint using Axios
-    axios.get('http://localhost:8000/api/bubble')
+    axios.get('https://blackcoofer.onrender.com/api/bubble')
       .then(response => {
         const data = response.data.res; // Assuming your response structure is similar
         setChartData(data);// Update the chart data state with the fetched data
